@@ -1,2 +1,9 @@
 # MPSS_MQHOA
-Multiple-population-based superposition state MQHOA
+Multiple-population-based superposition state MQHOA algorithm
+
+The paper's DOI of this algorithm is as follows:
+https://doi.org/10.1016/j.asoc.2021.107398
+
+The Abstract of this paper:
+Research on the merging of quantum mechanics and intelligence algorithms has received extensive attention in recent years. When applying quantum mechanics to intelligent algorithms, the first noteworthy problem is the representation of solutions in the form of a probability superposition. In the recently proposed multi-scale quantum harmonic oscillator algorithm (MQHOA), the representation of the solutions is not a superposition of the probability distributions, but a single distribution. This incorrect representation of the superposition state reduces the diversity of the solutions and limits the performance of the algorithm. To alleviate this problem, in this paper, a multiple-population-based mechanism that uses a quantum superposition is presented for MQHOA, which increases the search capacity of the algorithm by enhancing the diversity of the solutions. With the proposed method, the eigenstate is represented by the different size and distribution subpopulations of the particles. The optimization process is the process of continually changing the size and the distribution of the subpopulations to make the superposition state collapse to the ground state. The multiple-populationbased superposition state greatly increases the diversity of the optimization system and enhances the movement efficiency of the particles. The effectiveness of the method based on the performance of
+the algorithm was thoroughly investigated by comparing the method with the original MQHOA and several well-known intelligent algorithms on unimodal and multimodal benchmark functions and on a real-world charge management problem for plug-in hybrid electric vehicles. The experimental results reveal the effectiveness of the multiple-population-based superposition state used by the proposed method.
