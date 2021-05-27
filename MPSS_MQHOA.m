@@ -41,11 +41,11 @@ tot_time = zeros(1,repeat);
 for rep=1:repeat
     tic;
 %--Some temporary variables---------------------------%
-%funcV             Save the k sampled results (Vector£©
-%temp_samplePos    Save the temperary sampled results for subpopulation£¨Matrix£©
-%optimalSolution   Save the positions for all optimal solutions of the subpopulation(Matrix£©
+%funcV             Save the k sampled results (VectorÂ£Â©
+%temp_samplePos    Save the temperary sampled results for subpopulationÂ£Â¨MatrixÂ£Â©
+%optimalSolution   Save the positions for all optimal solutions of the subpopulation(MatrixÂ£Â©
 %sigma             Search range
-%stdPre            Standard deviation of sampling points in each dimension£¨Vector£©
+%stdPre            Standard deviation of sampling points in each dimensionÂ£Â¨VectorÂ£Â©
 %evolutiontime     Evaluation of the object functions
 %-------------------------------------------------------%
     funcV=zeros(1,subpop);
@@ -65,7 +65,8 @@ for rep=1:repeat
 %---------------Search scale matrix------------% 
             cov=diag(sigma.^2*ones(DIM,1)); 
 %------------------Fitness Ranking-------------%
-           [~,fitness_index]=sort(funcV,'descend'); 
+           [~,fitness_temp]=sort(funcV,'descend'); 
+           [~,fitness_index]=sort(fitness_temp);
             sum_ranking=0; 
             for k=1:subpop
                 sum_ranking=sum_ranking+(fitness_index(k))^(ranking_coef); 
